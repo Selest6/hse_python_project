@@ -1,4 +1,9 @@
 # SpiteBot
+Ссылка на бота: https://t.me/Spite8_bot
+Выложен на pythonanywhere, но с урезанными функциями (в связи с ограничениями на занимаемый объем памяти).
+Для полноценной работы его нужно запустить локально.
+<br>
+
 ### План readme:
 ### 1. Общее описание бота
 ### 2. Описание функционала и кнопок
@@ -51,8 +56,15 @@ Here is the important information you need to know before using the bot to facil
 
 # 4. Структура проекта и запуск
 
-Чтобы запустить бота, запустите файл main.py. Будьте готовы к тому, что при этом на компьютер будет загружено минимум 4 модели (2 с hugging face, 2 из spacy)
-
+Чтобы запустить бота, запустите файл main.py.Для корректной работы нужно установить следующие библиотеки:<br><br>
+pip install pyTelegramBotAPI<br>
+pip install hugchat<br>
+pip install transformers<br>
+pip install matplotlib<br>
+pip install wordcloud<br>
+pip install spacy<br>
+pip install langdetect<br><br>
+Будьте готовы к тому, что при первом запуске кода на компьютер будет также загружено минимум 4 модели (2 с hugging face, 2 из spacy).<br><br>
 Структура проекта:
 <br>
 
