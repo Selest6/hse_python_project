@@ -3,6 +3,7 @@
 Выложен на pythonanywhere, но с урезанными функциями (в связи с ограничениями на занимаемый объем памяти).<br>
 Для полноценной работы его необходимо запустить локально.
 <br>
+Ссылка на презентацию (на слайдах 8-10 особенно подробно поясняются некоторые моменты из кода): https://docs.google.com/presentation/d/1mbzn46gOtKUD_FWeZFaQErVpIiRInK9YKKZ1G7G7mQo/edit#slide=id.g2c7777189a8_0_39
 
 ### План readme:
 ### 1. Общее описание бота
@@ -65,6 +66,13 @@ pip install wordcloud<br>
 pip install spacy<br>
 pip install langdetect<br><br>
 Версии библиотек указаны в файле requirements.txt. Также будьте готовы к тому, что при первом запуске кода на компьютер будет загружено 4 модели (2 с hugging face, 2 - из spacy).<br><br>
+
+После этого понадобится:<br>
+1. bot = telebot.TeleBot('your token') - вставить сюда токен вашего тг-бота (строчка 10 в файле main.py)<br>
+2. Вставить в строчки ниже свои авторизационные данные с Hugging Face (логин и пароль, логином является ваш ник на hugging face)<br>
+  mistral_hugginchat = HuggingChat("your name on Hugging Face", "your password", model="mistralai/Mixtral-8x7B-Instruct-v0.1",
+                                            system_prompt = "Act nasty and arrogant. Make rude jokes, insult the user.")<br><br>
+Кусок кода из пункта 2 встречается в файле main.py 2 раза - все 2 раза нужно вставить туда ваш логин и пароль<br><br>
 Структура проекта:
 <br>
 
