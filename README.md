@@ -35,7 +35,7 @@ After pressing the button Start the conversation, several menu buttons will be a
 The button New Chat does the same thing as the button Start the conversation: it creates a new chat with the artificial intelligence model, making it forget all the information from the previous chat. From this point onwards, a new chat will start and the model will remember only the messages from the newly created chat.<br>
 Emotion Analysis - the last message of the bot returns the sentiment analysis of the last message of the bot. (ДОСТУПНО ТОЛЬКО НА ЛОКАЛЬНОМ КОМПЬЮТЕРЕ)<br>
 Emotion Analysis - the last message of the user returns the sentiment analysis of the last message of the user. (ДОСТУПНО ТОЛЬКО НА ЛОКАЛЬНОМ КОМПЬЮТЕРЕ)<br>
-Show Statistics shows several buttons that return different statistics: (ЭТА ФУНКЦИЯ И ФУНКЦИИ НИЖЕ ДОСТУПНЫ ТОЛЬКО НА ЛОКАЛЬНОМ КОМПЬЮТЕРЕ)<br>
+Show Statistics shows several buttons that return different statistics: (ЭТА ФУНКЦИЯ И ФУНКЦИИ НИЖЕ (за исключением функции number of users - она работает) ДОСТУПНЫ ТОЛЬКО НА ЛОКАЛЬНОМ КОМПЬЮТЕРЕ)<br>
 • press The number of the users to see the number of the people that has used the bot.<br>
 • press General wordcloud to see two wordclouds: the wordcloud for the most frequent words in all the users' messages and the wordcloud for the most frequent words in all the bot's messages ever sent to users.<br>
 • press Wordcloud for this chat to see two wordclouds: the wordcloud for the most frequent words in all your messages to the bot and the wordcloud for the most frequent words in all the bot's messages ever sent to you.<br>
