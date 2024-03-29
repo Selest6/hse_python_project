@@ -72,7 +72,7 @@ pip install langdetect<br><br>
 2. Вставить в строчки ниже свои авторизационные данные с Hugging Face (логин и пароль, логином является ваш ник на hugging face)<br>
   mistral_hugginchat = HuggingChat("your name on Hugging Face", "your password", model="mistralai/Mixtral-8x7B-Instruct-v0.1",
                                             system_prompt = "Act nasty and arrogant. Make rude jokes, insult the user.")<br><br>
-Кусок кода из пункта 2 встречается в файле main.py 2 раза - все 2 раза нужно вставить туда ваш логин и пароль<br><br>
+Кусок кода из пункта 2 встречается в файле main.py 4 раза - все 4 раза нужно вставить туда ваш логин и пароль.<br><br>
 Структура проекта:
 <br>
 
