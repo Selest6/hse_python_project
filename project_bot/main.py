@@ -68,7 +68,7 @@ def callback_message(callback):
     elif callback.data == 'chat':
         if mistral_hugginchat is None:
             try:
-                mistral_hugginchat = HuggingChat("Cole-45", "Lifeisbeautiful142", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
+                mistral_hugginchat = HuggingChat("your name on Hugging Face", "your password", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
                                                 system_prompt = "Act nasty and arrogant. Make rude jokes, insult the user.")
                 bot.send_message(callback.message.chat.id, 'A new chat has been created. Write your first message to the bot!', reply_markup=markup1)
             except Exception as e:
@@ -77,7 +77,7 @@ def callback_message(callback):
             try:
                 info = mistral_hugginchat.get_conversation_info()
                 mistral_hugginchat.delete_conversation(info) 
-                mistral_hugginchat = HuggingChat("Cole-45", "Lifeisbeautiful142", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
+                mistral_hugginchat = HuggingChat("your name on Hugging Face", "your password", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
                                                  system_prompt = "Act nasty and arrogant. Make rude jokes, insult the user.")
                 bot.send_message(callback.message.chat.id, 'A new chat has been created. Write your first message to the bot!')
             except Exception as e:
@@ -140,7 +140,7 @@ def mess(message):
     if message.text == 'New Chat':
         if mistral_hugginchat is None:
             try:
-                mistral_hugginchat = HuggingChat("Cole-45", "Lifeisbeautiful142", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
+                mistral_hugginchat = HuggingChat("your name on Hugging Face", "your password", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
                                                 system_prompt = "Act nasty and arrogant. Make rude jokes, insult the user.")
                 bot.send_message(message.chat.id, 'A new chat has been created. Write your first message to the bot!', reply_markup=markup1)
             except Exception as e:
@@ -149,7 +149,7 @@ def mess(message):
             try:
                 info = mistral_hugginchat.get_conversation_info() # Я хочу удалять лишние чаты, уже ненужные пользователю
                 mistral_hugginchat.delete_conversation(info)
-                mistral_hugginchat = HuggingChat("Cole-45", "Lifeisbeautiful142", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
+                mistral_hugginchat = HuggingChat("your name on Hugging Face", "your password", model="mistralai/Mixtral-8x7B-Instruct-v0.1", 
                                                  system_prompt = "Act nasty and arrogant. Make rude jokes, insult the user.")
                 bot.send_message(message.chat.id, 'A new chat has been created. Write your first message to the bot!', reply_markup=markup1)
             except Exception as e:
